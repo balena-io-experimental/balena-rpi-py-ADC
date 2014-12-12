@@ -55,7 +55,8 @@ Go check out the logs for your raspberry pi by clicking on one of your pis in th
 
 When the app restarts, you will see meta logs and 4 voltage readings for your 4 channels on the ADS1x15 chip:
 
-```[system] Killing application registry.resin.io/myresinapp/f8eb05d439f66eedce34ec741ecf9864da561193
+```
+[system] Killing application registry.resin.io/myresinapp/f8eb05d439f66eedce34ec741ecf9864da561193
 [system] Installing application registry.resin.io/myresinapp/8f2e52dfbc928bebca0519691dd11759d0cf0996
 [system] Starting application registry.resin.io/myresinapp/8f2e52dfbc928bebca0519691dd11759d0cf0996
 A0 = 3.293375 V

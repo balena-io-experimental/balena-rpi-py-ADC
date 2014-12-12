@@ -51,6 +51,19 @@ Go check out the logs for your raspberry pi by clicking on one of your pis in th
 > Don't worry, this is just because the modprobe to enable i2c has not loaded yet. You will need to go to your application dashboard on alpha.resin.io and restart the application, this is done in the actions tab for the application.
 > Once the application restarts, you will see the ADC function as advertised.
 
+When the app restarts, you will see meta logs and 4 voltage readings for your 4 channels on the ADS1x15 chip:
+
+```[system] Killing application registry.resin.io/myresinapp/f8eb05d439f66eedce34ec741ecf9864da561193
+[system] Installing application registry.resin.io/myresinapp/8f2e52dfbc928bebca0519691dd11759d0cf0996
+[system] Starting application registry.resin.io/myresinapp/8f2e52dfbc928bebca0519691dd11759d0cf0996
+A0 = 3.293375 V
+A1 = 0.000000 V
+A2 = 3.293250 V
+A3 = 0.000000 V
+```
+
+From here you should be able to do all kinds of cool things. Also be sure to check out the different modes and config for the ADS1x15 chip, it is possible to run it as a 2 channel differential ADC and in a comparator mode.
+
 [1]:http://www.raspberrypi.org/
 [2]:http://www.adafruit.com/product/1085
 [3]:http://www.adafruit.com/product/1105

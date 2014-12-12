@@ -1,5 +1,8 @@
 ###Analog input for the raspberry pi using the ADS1x15
+
 One of the most common things people want to do is read analog signals from their sensors using the raspberry pi. Unfortunately the pi doesn't have a native analog-to-digital converter (ADC). Luckily there is an awesome family of chips called the ADS1x15 that can help us get analog input using I2C protocol bus. 
+
+All the supporting libs for driving the I2C bus and the ADS1x15 board was borrowed from the Adafruit raspberry pi python repo [link][4]
 
 ##what you'll need
 
@@ -51,3 +54,4 @@ Go check out the logs for your raspberry pi by clicking on one of your pis in th
 [1]:http://www.raspberrypi.org/
 [2]:http://www.adafruit.com/product/1085
 [3]:http://www.adafruit.com/product/1105
+[4]:https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code

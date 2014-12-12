@@ -16,10 +16,12 @@ All the supporting libs for driving the I2C bus and the ADS1x15 board was borrow
 
 connect the pins up like this:
 - ADS1x15 VDD pin -> RPI 3v3 Power pin
-- ADS1x15 SCL pin -> RPI GPIO 1 (SCL)
+- ADS1x15 SCL pin -> RPI GPIO 1 (SCL) 
 - DS1x15 SDA pin -> RPI GPIO 0 (SDA)
 - ADS1x15 ADDR pin -> any RPI GND pin
 - ADS1x15 GND -> any RPI GND pin
+
+![Connecting ADS1x15](/images/ads1115_rpi_wireup.png)
 
 ## Resin.io Setup & Deployment
 
@@ -31,7 +33,7 @@ connect the pins up like this:
 
 `$ git clone https://github.com/shaunmulligan/resin_rpi_py_analog.git`
 
-then add the resin remote: (replacing <myUserName> and <myApplicationName> with yours from the resin.io dashboard) note: avoid having to type this by simply clicking the little clipboard at the top right of the resin application dashboard.
+then add the resin remote: (replacing myUserName and myApplicationName with yours from the resin.io dashboard) note: avoid having to type this by simply clicking the little clipboard at the top right of the resin application dashboard.
 
 `$ git remote add resin git@git.staging.resin.io:<myUserName>/<myApplicationName>.git`
 

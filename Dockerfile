@@ -1,4 +1,5 @@
-FROM resin/rpi-buildstep-armv6hf:latest
+FROM resin/rpi-raspbian:wheezy-2015-01-12
+RUN echo "deb [arch=armhf] http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi firmware" > /etc/apt/sources.list
 
 # Install Python.
 RUN apt-get update
